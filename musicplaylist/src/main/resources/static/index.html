@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Playlist Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Music Playlist Manager</h1>
+
+<div class="container">
+
+<h2>Add Song</h2>
+
+<input type="text" id="songName" placeholder="Song Name">
+<input type="text" id="artist" placeholder="Artist">
+<input type="text" id="duration" placeholder="Duration (mm:ss)">
+<button onclick="addSong()">Add Song</button>
+
+</div>
+
+<div class="playlist">
+
+<h2>Playlist</h2>
+
+<p id="songCount">Total Songs: 0</p>
+
+<input type="text" id="searchBox" placeholder="Search song..." onkeyup="searchSongs()">
+
+<ul id="songList"></ul>
+
+<button onclick="shufflePlaylist()">Shuffle Playlist</button>
+<button onclick="sortSongs()">Sort A-Z</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
